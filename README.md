@@ -6,8 +6,8 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/ccch1mneyyy/dsh-Go"><img alt="dsh-go 插件" src="https://img.shields.io/badge/dsh--go-%E6%8F%92%E4%BB%B6-4B67B4?style=flat-square&labelColor=2B3245"></a>
-  <a href="https://github.com/hisence999/dsh-go-mcp"><img alt="协议 v1" src="https://img.shields.io/badge/%E5%8D%8F%E8%AE%AE-v1-4B67B4?style=flat-square&labelColor=2B3245"></a>
+  <a href="https://github.com/ccch1mneyyy/dsh-Go"><img alt="dsh-go 插件" src="https://img.shields.io/badge/dsh--go-4B67B4?style=flat-square&labelColor=2B3245"></a>
+  <a href="https://github.com/hisence999/dsh-go-mcp"><img alt="deepseek-harness" src="https://img.shields.io/badge/deepseek--harness-4B67B4?style=flat-square&labelColor=2B3245"></a>
   <a href="LICENSE"><img alt="MIT" src="https://img.shields.io/badge/%E8%AE%B8%E5%8F%AF%E8%AF%81-MIT-4B67B4?style=flat-square&labelColor=2B3245"></a>
   <a href="https://github.com/hisence999/dsh-go-mcp/stargazers"><img alt="Star" src="https://img.shields.io/github/stars/hisence999/dsh-go-mcp?style=flat-square&logo=github&label=Star&color=4B67B4&labelColor=2B3245"></a>
 </p>
