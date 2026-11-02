@@ -125,6 +125,24 @@ dsh plugin --profile web add https://github.com/hisence999/dsh-go-mcp
 - `mcp_install` 的 schema 每个请求约 255 token。不想要的话，删掉 `lib/index.js` 里注册它的那段 `ctx.effect`
 - 出问题时先看 App 的「设置 → 诊断」，那里有引擎日志
 
+## 致谢
+
+这个插件是踩着前人的肩膀做出来的，特别感谢：
+
+- **[DSH Go](https://github.com/ccch1mneyyy/dsh-Go)** — 手机上的 DeepSeek Harness 客户端，也是这个插件唯一的运行环境。原生面板、胶囊、`dsh-go-plugin` 的整套协议都来自它。
+- **[DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness)** — 底层引擎，插件以 Cordis 插件的形式挂进去。
+- **[dsh-mcp-manage](https://github.com/hisence999/dsh-mcp-manage)** — 最初的网页版 MCP 管理器，后端的读写路径基本沿自它，这个插件是它搬到手机原生界面的版本。
+
+## 点个 Star
+
+如果它帮你省下了 token，欢迎给两边都点一下：
+
+<p align="center">
+  <a href="https://github.com/hisence999/dsh-go-mcp"><img alt="给 dsh-go-mcp 点 Star" src="https://img.shields.io/github/stars/hisence999/dsh-go-mcp?style=for-the-badge&logo=github&label=Star%20dsh-go-mcp&color=4B67B4&labelColor=2B3245"></a>&emsp;<a href="https://github.com/ccch1mneyyy/dsh-Go"><img alt="给 DSH Go 点 Star" src="https://img.shields.io/github/stars/ccch1mneyyy/dsh-go?style=for-the-badge&logo=github&label=Star%20DSH%20Go&color=4B67B4&labelColor=2B3245"></a>
+</p>
+
+<p align="center"><sub>Star 点得越多，我和 DSH Go 都更有动力继续做下去 🐳</sub></p>
+
 ## 许可
 
 [MIT](LICENSE)
