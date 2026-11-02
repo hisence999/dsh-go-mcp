@@ -1,0 +1,69 @@
+{
+  "name": "dsh-go-mcp",
+  "version": "0.1.0",
+  "description": "MCP server manager for the dsh-go phone app, drawn as native panels.",
+  "type": "module",
+  "main": "lib/index.js",
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "README.md"
+  ],
+  "keywords": [
+    "dsh",
+    "dsh-go",
+    "mcp",
+    "cordis"
+  ],
+  "license": "MIT",
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "engines": {
+    "dsh": ">=0.2.1-rc.2 <0.3.0-0"
+  },
+  "dshGo": {
+    "v": 1,
+    "title": { "zh": "MCP 管理", "en": "MCP manager" },
+    "icon": "server",
+    "wants": ["clipboard"],
+    "contributes": {
+      "composer.actions": [
+        {
+          "id": "open-servers",
+          "label": { "zh": "MCP 管理", "en": "MCP" },
+          "icon": "server",
+          "effect": [{ "type": "open", "page": "panel:servers" }]
+        }
+      ],
+      "panels": [
+        {
+          "id": "servers",
+          "title": { "zh": "MCP 服务器", "en": "MCP servers" },
+          "icon": "server",
+          "placement": ["session.tab", "features"]
+        },
+        {
+          "id": "detail",
+          "title": { "zh": "服务器详情", "en": "Server detail" },
+          "icon": "plugin",
+          "placement": ["session.tab", "features"]
+        },
+        {
+          "id": "add",
+          "title": { "zh": "添加服务器", "en": "Add server" },
+          "icon": "add",
+          "placement": ["session.tab", "features"]
+        },
+        {
+          "id": "tools",
+          "title": { "zh": "工具清单", "en": "Tool inventory" },
+          "icon": "tool",
+          "placement": ["session.tab", "features"]
+        }
+      ]
+    }
+  }
+}
