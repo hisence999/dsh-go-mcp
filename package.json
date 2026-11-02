@@ -26,44 +26,84 @@
   },
   "dshGo": {
     "v": 1,
-    "title": { "zh": "MCP 管理", "en": "MCP manager" },
+    "title": {
+      "zh": "MCP 管理",
+      "en": "MCP manager"
+    },
     "icon": "server",
-    "wants": ["clipboard"],
+    "wants": [
+      "clipboard"
+    ],
     "contributes": {
       "composer.actions": [
         {
           "id": "open-servers",
-          "label": { "zh": "MCP 管理", "en": "MCP" },
+          "label": {
+            "zh": "MCP 管理",
+            "en": "MCP"
+          },
           "icon": "server",
-          "effect": [{ "type": "open", "page": "panel:servers" }]
+          "effect": [
+            {
+              "type": "open",
+              "page": "panel:servers"
+            }
+          ]
         }
       ],
       "panels": [
         {
           "id": "servers",
-          "title": { "zh": "MCP 服务器", "en": "MCP servers" },
+          "title": {
+            "zh": "MCP 服务器",
+            "en": "MCP servers"
+          },
           "icon": "server",
-          "placement": ["session.tab", "features"]
+          "placement": [
+            "session.tab",
+            "features"
+          ]
         },
         {
           "id": "detail",
-          "title": { "zh": "服务器详情", "en": "Server detail" },
+          "title": {
+            "zh": "服务器详情",
+            "en": "Server detail"
+          },
           "icon": "plugin",
-          "placement": ["session.tab", "features"]
+          "placement": [
+            "session.tab",
+            "features"
+          ]
         },
         {
           "id": "add",
-          "title": { "zh": "添加服务器", "en": "Add server" },
+          "title": {
+            "zh": "添加服务器",
+            "en": "Add server"
+          },
           "icon": "add",
-          "placement": ["session.tab", "features"]
+          "placement": [
+            "session.tab",
+            "features"
+          ]
         },
         {
           "id": "tools",
-          "title": { "zh": "工具清单", "en": "Tool inventory" },
+          "title": {
+            "zh": "工具清单",
+            "en": "Tool inventory"
+          },
           "icon": "tool",
-          "placement": ["session.tab", "features"]
+          "placement": [
+            "session.tab",
+            "features"
+          ]
         }
       ]
     }
+  },
+  "dependencies": {
+    "yaml": "^2.9.1"
   }
 }
