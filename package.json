@@ -2,12 +2,22 @@
   "name": "dsh-go-mcp",
   "version": "0.1.0",
   "description": "MCP server manager for the dsh-go phone app, drawn as native panels.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hisence999/dsh-go-mcp.git"
+  },
+  "homepage": "https://github.com/hisence999/dsh-go-mcp#readme",
+  "bugs": {
+    "url": "https://github.com/hisence999/dsh-go-mcp/issues"
+  },
+  "author": "hisence999",
   "type": "module",
   "main": "lib/index.js",
   "files": [
     "lib",
     "cordis.patch.yml",
-    "README.md"
+    "README.md",
+    "LICENSE"
   ],
   "keywords": [
     "dsh",

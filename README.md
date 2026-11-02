@@ -17,6 +17,10 @@ MCP 服务器管理，**专为 [dsh-go](https://github.com/hisence999/dsh-go) �
 ## 安装
 
 ```sh
+# 已发布到 npm 之后
+dsh plugin --profile web add dsh-go-mcp
+
+# 或者直接从 GitHub 装
 dsh plugin --profile web add https://github.com/hisence999/dsh-go-mcp
 ```
 
