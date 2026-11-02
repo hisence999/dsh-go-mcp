@@ -24,7 +24,9 @@
     "dsh",
     "dsh-go",
     "mcp",
-    "cordis"
+    "cordis",
+    "dsh-go-plugin",
+    "deepseek-harness"
   ],
   "license": "MIT",
   "dsh": {

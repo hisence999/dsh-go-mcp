@@ -1,7 +1,3 @@
-<p align="center">
-  <img src="docs/assets/hero-capsule.webp" alt="聊天页输入框上方的 MCP 管理胶囊" width="260">
-</p>
-
 <h3 align="center">dsh-go-mcp</h3>
 
 <p align="center">
@@ -10,7 +6,8 @@
 </p>
 
 <p align="center">
-  <a href="https://www.npmjs.com/package/dsh-go-mcp"><img alt="npm" src="https://img.shields.io/npm/v/dsh-go-mcp?style=flat-square&logo=npm&labelColor=2B3245&color=4B67B4"></a>
+  <a href="https://github.com/ccch1mneyyy/dsh-Go"><img alt="dsh-go 插件" src="https://img.shields.io/badge/dsh--go-%E6%8F%92%E4%BB%B6-4B67B4?style=flat-square&labelColor=2B3245"></a>
+  <a href="https://github.com/hisence999/dsh-go-mcp"><img alt="协议 v1" src="https://img.shields.io/badge/%E5%8D%8F%E8%AE%AE-v1-4B67B4?style=flat-square&labelColor=2B3245"></a>
   <a href="LICENSE"><img alt="MIT" src="https://img.shields.io/badge/%E8%AE%B8%E5%8F%AF%E8%AF%81-MIT-4B67B4?style=flat-square&labelColor=2B3245"></a>
   <a href="https://github.com/hisence999/dsh-go-mcp/stargazers"><img alt="Star" src="https://img.shields.io/github/stars/hisence999/dsh-go-mcp?style=flat-square&logo=github&label=Star&color=4B67B4&labelColor=2B3245"></a>
 </p>
@@ -60,21 +57,33 @@ MCP 工具的 schema 每个请求都要付一次 token。装五六台服务器�
 
 需要 [DSH Go](https://github.com/ccch1mneyyy/dsh-Go) 与 DSH 0.2.x。
 
-```sh
-dsh plugin --profile web add dsh-go-mcp
+**最省事的办法**：在 DSH 对话框里直接发这句话，让它自己装——
+
+```
+帮我安装 MCP 管理插件：
+dsh plugin --profile web add https://github.com/hisence999/dsh-go-mcp
+装完提醒我重启引擎。
 ```
 
-也可以直接从 GitHub 装：
+装完**重启一次引擎**（App 的「引擎」页），插件才会生效。
+
+也可以自己开终端敲同一行：
 
 ```sh
 dsh plugin --profile web add https://github.com/hisence999/dsh-go-mcp
 ```
 
-装完**重启一次引擎**（App 的「引擎」页），插件才会生效。
+> npm 包还在准备中，发布后可以用 `dsh plugin --profile web add dsh-go-mcp`。
+
+装好后聊天页输入框上方就有「MCP 管理」胶囊了：
+
+<p align="center">
+  <img src="docs/assets/hero-capsule.webp" alt="聊天页输入框上方的 MCP 管理胶囊" width="240">
+</p>
 
 ## 使用
 
-聊天页输入框上方会出现「MCP 管理」胶囊，点一下就是面板。也可以在「全部功能」或对话详情页的「插件」页签里找到。
+点那个胶囊就是面板；也可以在「全部功能」或对话详情页的「插件」页签里找到。
 
 <p align="center">
   <img src="docs/assets/f-add.webp" alt="添加服务器" width="290">
