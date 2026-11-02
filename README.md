@@ -10,6 +10,7 @@ MCP 服务器管理，**专为 [dsh-go](https://github.com/hisence999/dsh-go) �
 - **单个服务器** — 启用 / 停用、开关按需加载、填写用途备注、查看占用最大的工具
 - **添加服务器** — 手工填命令或 url，也可以直接粘贴一段 `mcpServers` JSON
 - **工具清单** — 所有服务器的工具数与开销汇总
+- **`mcp_install` 工具** — 让模型自己装服务器：说「帮我加个 exa 搜索」就行，不用手填面板
 
 **按需加载（lazy）** 是这个插件的主要特性：开启后，那台服务器的工具不会进入模型每次请求的工具块，只有模型调用 `mcp_tools` 时才临时加载进当前会话。服务器多的时候能省下可观的 token。
 
@@ -20,6 +21,20 @@ dsh plugin --profile web add https://github.com/hisence999/dsh-go-mcp
 ```
 
 重启一次引擎（App 的「引擎」页），插件才会生效。
+
+## 让模型自己装
+
+装好这个插件后，模型手上多一个 `mcp_install` 工具，可以直接添加服务器：
+
+```
+帮我加一个 exa 搜索的 MCP
+```
+
+模型会调 `mcp_install {server: "exa", url: "https://mcp.exa.ai/mcp"}`，写进 profile 并热重载——不需要你打开面板。
+
+它和手动填面板走的是同一条写入路径，两种方式可以混用。默认按需安装（工具先不进上下文），需要时让模型调 `mcp_tools` 加载。
+
+**代价**：这个工具的 schema 每个请求约 255 token。不想要的话，删掉 `lib/index.js` 里注册 `mcp_install` 的那段 `ctx.effect` 即可。
 
 ## 使用
 
