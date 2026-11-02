@@ -2,7 +2,7 @@
 
 <p align="center">
   MCP 服务器管理，专为 <a href="https://github.com/ccch1mneyyy/dsh-Go">DSH Go</a> 手机 App 打造。<br>
-  原生面板，没有网页设置页；会话级按需加载，把工具 schema 的 token 花在真正用得上的地方。
+  会话级按需加载，把工具 schema 的 token 花在真正用得上的地方。
 </p>
 
 <p align="center">
@@ -67,15 +67,7 @@ dsh plugin --profile web add https://github.com/hisence999/dsh-go-mcp
 
 装完**重启一次引擎**（App 的「引擎」页），插件才会生效。
 
-也可以自己开终端敲同一行：
-
-```sh
-dsh plugin --profile web add https://github.com/hisence999/dsh-go-mcp
-```
-
-> npm 包还在准备中，发布后可以用 `dsh plugin --profile web add dsh-go-mcp`。
-
-装好后聊天页输入框上方就有「MCP 管理」胶囊了：
+聊天页输入框上方会出现「MCP 管理」胶囊：
 
 <p align="center">
   <img src="docs/assets/hero-capsule.webp" alt="聊天页输入框上方的 MCP 管理胶囊" width="240">
